@@ -10,13 +10,15 @@ const HelloWorld = () => {
 export default HelloWorld;
 
 function HeaderHelloWorld() {
-  return <h1>Hello World</h1>;
+  const text = "Hello World";
+  return <h1>{text.toUpperCase()}</h1>;
 }
 
 function ParagraphHelloWorld() {
+  const text = "Selamat Belajar ReactJs";
   return (
     <div>
-      <p>Selamat Belajar ReactJs</p>
+      <p>{text.toUpperCase()}</p>
     </div>
   );
 }
