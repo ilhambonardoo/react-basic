@@ -1,7 +1,7 @@
 const HelloWorld = () => {
   return (
     <>
-      <HeaderHelloWorld />
+      <HeaderHelloWorld text="Hello World" />
       <ParagraphHelloWorld />
     </>
   );
@@ -9,8 +9,7 @@ const HelloWorld = () => {
 
 export default HelloWorld;
 
-function HeaderHelloWorld() {
-  const text = "Hello World";
+function HeaderHelloWorld({ text = "Ups lupa kasih teks" }) {
   return (
     <h1
       style={{
