@@ -1,12 +1,22 @@
 const HelloWorld = () => {
   return (
     <>
-      <div>
-        <h1>Hello World</h1>
-        <p>Selamat Belajar React Js </p>
-      </div>
+      <HeaderHelloWorld />
+      <ParagraphHelloWorld />
     </>
   );
 };
 
 export default HelloWorld;
+
+function HeaderHelloWorld() {
+  return <h1>Hello World</h1>;
+}
+
+function ParagraphHelloWorld() {
+  return (
+    <div>
+      <p>Selamat Belajar ReactJs</p>
+    </div>
+  );
+}
