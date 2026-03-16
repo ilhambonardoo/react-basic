@@ -1,7 +1,10 @@
 const HelloWorld = () => {
+  const props = {
+    text: "Hello World spread text",
+  };
   return (
     <>
-      <HeaderHelloWorld text="Hello World" />
+      <HeaderHelloWorld {...props} />
       <ParagraphHelloWorld />
     </>
   );
