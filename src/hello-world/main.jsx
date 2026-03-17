@@ -7,6 +7,7 @@ import Table from "../table/Table";
 import AlertButton from "../button/AlertButton";
 import MyButton from "../button/MyButton";
 import Toolbar from "../button/Toolbar";
+import SearchForm from "../form/SearchForm";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById("root")).render(
           alert("You Click ToolBar");
         }}
       />
+      <SearchForm />
     </Container>
   </StrictMode>,
 );
