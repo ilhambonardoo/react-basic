@@ -10,15 +10,8 @@ const CounterApp = () => {
 
   return (
     <div>
-      {show2 ? (
-        <div>
-          <Counter nama={"Bonardo"} />
-        </div>
-      ) : (
-        <section>
-          <Counter nama={"Ilham"} />
-        </section>
-      )}
+      {show2 && <Counter nama={"Ilham"} />}
+      {!show2 && <Counter nama={"Bonardo"} />}
       <input type="checkbox" checked={show2} onChange={handleChange} />
       Tampilkan Counter 2
     </div>
