@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-
+import GuestBookForm from "./GuestBookForm";
 const GuestBook = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -20,14 +20,7 @@ const GuestBook = () => {
     <>
       <h1>Guest Book</h1>
       <form>
-        <label htmlFor="name">Name : </label>
-        <input
-          ref={nameInput}
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <br />
+        <GuestBookForm ref={nameInput} setName={setName} name={name} />
         <label htmlFor="message">Message</label>
         <br />
         <textarea
