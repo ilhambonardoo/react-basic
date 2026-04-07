@@ -13,6 +13,10 @@ const ProductList = () => {
         .then((data) => setProducts(data))
         .then(() => (loaded.current = true));
     }
+
+    return () => {
+      console.info("Product list component unmounted");
+    };
   });
 
   return (
