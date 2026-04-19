@@ -10,6 +10,10 @@ const ProductList = () => {
   }
 
   useEffect(() => {
+    console.info("CALL USE EFFECT with []");
+  }, []);
+
+  useEffect(() => {
     console.info("call use effect");
     if (load) {
       fetch("/products.json")
